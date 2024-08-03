@@ -1,0 +1,54 @@
+@import "./file.css";
+
+body {
+    font-family: sans-serif;
+    color: #000;
+}
+
+.header_link {
+    display: block;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.login_bg_img {
+    height: calc(100vh - 61px);
+    width: 100%;
+    background-position: center ;
+    background-size: cover;
+    background-image: url('./img/bg.jpg');
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+
+.login_form_bg_img {
+    height: calc(100vh - 61px);
+    background-position: center ;
+    background-size: cover;
+    background-image: none;
+    @media (max-width: 768px) {
+        width: 100%;
+/*        background-image: url('./img/bg.jpg');*/
+    }
+}
+.border-line {
+    width: 40px;
+    height: 4px;
+    margin: 24px 0px;
+    border-radius: 20px;
+    background: rgb(1, 188, 141);
+    background-clip: border-box;
+}
+
+
+input.form-control {
+    border-radius: 0px;
+}
+
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: none ;
+}
